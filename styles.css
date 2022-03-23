@@ -68,3 +68,17 @@ section{
     transform: translate(-4%, 40%);
     z-index: -1;
   }
+
+  .bubble::after{
+    content: '';
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    height: 85%;
+    width: 100%;
+    background-color: #E83A14;
+    z-index: -1;
+
+
+  }
