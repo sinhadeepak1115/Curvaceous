@@ -4,3 +4,67 @@ body{
     color: white;
     background: #202731;
 }
+
+section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
+
+.one{
+    background: #FF6B6B;
+}
+.two{
+    background: #39AEA9;
+}
+.three{
+    background: #F10086;
+}
+.four{
+    background: #85C88A;
+}
+.five{
+    background: #488FB1;
+}
+.six{
+    background: #E83A14;
+}
+.seven{
+    background: #FA4EAB;
+}
+.eight{
+    background: #F76E11;
+}
+.curve {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+  }
+
+  .curve::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    transform: translate(85%, 60%);
+    background-color: hsl(216, 21%, 16%);
+  }
+
+  .curve::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #FF6B6B;
+    transform: translate(-4%, 40%);
+    z-index: -1;
+  }
